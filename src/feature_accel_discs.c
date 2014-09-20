@@ -6,6 +6,7 @@ static GRect window_frame;
 
 static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
+  layer_get_frame
   GRect frame = window_frame = layer_get_frame(window_layer);
 }
 
