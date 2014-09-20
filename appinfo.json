@@ -1,15 +1,25 @@
 {
     "appKeys": {},
-    "capabilities":["configurable"],
+    "capabilities": [
+        "configurable"
+    ],
     "companyName": "keri@warr.ca",
     "longName": "MemoryTrain",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/answers.png",
+                "name": "background",
+                "type": "png"
+            }
+        ]
     },
     "shortName": "MemoryTrain",
     "uuid": "50780618-30df-42af-b9c1-bd1514f054fd",
     "versionCode": 1,
     "versionLabel": "1.0",
-    "watchapp": {"watchface": false}
+    "watchapp": {
+        "watchface": false
+    }
 }

@@ -1,4 +1,5 @@
 #include "pebble.h"
+#include "pebble_fonts.h"
 #include "qa.h"
  
 static Window *window;
@@ -16,7 +17,7 @@ static void window_load(Window *window) {
     text_layer_set_text_color(question_layer, GColorBlack);
     text_layer_set_text(question_layer, QA[0]);
 
-    text_layer_set_font(question_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
+    text_layer_set_font(question_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
     text_layer_set_text_alignment(question_layer, GTextAlignmentCenter);
 
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(question_layer));
