@@ -1,12 +1,21 @@
 #include "pebble.h"
+#include "qa.c"
  
 static Window *window;
 
-static GRect window_frame;
+static void window_load(Window *window) {  
+    
+    static TextLayer *question_layer;
+    GRect bounds = layer_get_frame(window_layer);
+    question_layer = text_layer_create(bounds);
+    text_layer_set_background_color(question_layer, GColorClear);
+    text_layer_set_text_color(question_layer, GColorBlack);
+    text_layer_set_text(question_layer, QA[0]);
 
-static void window_load(Window *window) {
-  Layer *window_layer = window_get_root_layer(window);
-  GRect frame = window_frame = layer_get_frame(window_layer);
+    text_layer_set_font(question_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
+    text_layer_set_text_alignment(question_layer, GTextAlignmentCenter);
+
+    layer_add_child(window_get_root_layer(window), text_layer_get_layer(question_layer));
 }
 
 static void window_unload(Window *window) {
@@ -24,6 +33,7 @@ static void init(void) {
 
 static void deinit(void) {
   window_destroy(window);
+    text_layer_destroy(question_layer);
 }
 
 int main(void) {
