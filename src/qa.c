@@ -12,3 +12,5 @@ char *QA [] = {
     "Who played the Tenth Doctor?",
     "David Tennant",
     }
+
+int qa_len = 6; // Number of q/a pairs in the qa array.
