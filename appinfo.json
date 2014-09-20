@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "keri@warr.ca",
+    "longName": "InitialTest",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "InitialTest",
+    "uuid": "50780618-30df-42af-b9c1-bd1514f054fd",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
