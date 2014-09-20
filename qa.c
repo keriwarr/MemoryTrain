@@ -1,4 +1,5 @@
 char *QA [] = {
+    6,
     "What year was the University of Waterloo established?",
     "1957",
     "What is everyone's favourite hackathon?",
@@ -11,4 +12,4 @@ char *QA [] = {
     "Randall Munroe",
     "Who played the Tenth Doctor?",
     "David Tennant",
-    }
+    };
