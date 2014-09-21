@@ -11,6 +11,10 @@ static Layer *window_layer;
 static BitmapLayer *s_background_layer;
 static GBitmap *s_background_bitmap;
 
+//
+char buffer[4];
+//
+
 static void window_load(Window *window) {  
     
     window_layer = window_get_root_layer(window);
@@ -23,13 +27,19 @@ static void window_load(Window *window) {
     layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(s_background_layer));
     
     question_layer = text_layer_create(inner);
-    text_layer_set_background_color(question_layer, GColorClear);
     text_layer_set_text_color(question_layer, GColorBlack);
-    text_layer_set_text(question_layer, QA[0]);
-    layer_set_bounds((Layer*)question_layer,GRect(0,(168-text_layer_get_content_size(question_layer).h)/2,112,text_layer_get_content_size(question_layer).h));
-
-    text_layer_set_font(question_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
+    text_layer_set_text(question_layer, QA[4]);
+    text_layer_set_background_color(question_layer, GColorClear);
+    text_layer_set_font(question_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
     text_layer_set_text_alignment(question_layer, GTextAlignmentCenter);
+    layer_set_frame((Layer*)question_layer,GRect(0,((168-(text_layer_get_content_size(question_layer).h))/2)-4,112,text_layer_get_content_size(question_layer).h));
+    
+    //
+    int value = text_layer_get_content_size(question_layer).h;
+    snprintf(buffer, 4, "%d", value);
+    //text_layer_set_text(question_layer, buffer);
+    //
+    
 
     layer_add_child(window_get_root_layer(window), text_layer_get_layer(question_layer));
 }
