@@ -5,6 +5,9 @@ Spaced-repetition-based memory training app for the [Pebble](https://getpebble.c
 
 See the [ChallengePost](http://challengepost.com/software/memorytime) for the Hack the North entry!
 
+![question](http://s3.amazonaws.com/challengepost/photos/production/software_photos/000/161/905/datas/xlarge.png?1411309535)
+![answer](http://s3.amazonaws.com/challengepost/photos/production/software_photos/000/161/907/datas/xlarge.png?1411309537)
+
 We designed this Pebble app for ourselves - busy students on the go, who need to chisel time out of our day to study. What if it were easier to study concepts and have your brain remember them?
 
 Memory training is what spaced repetition software is all about. Memory science has shown that it is most effective to study a concept just before your brain forgets it.This way, your brain works harder to recall a concept, and by doing so the concept solidifies in your memory. Spaced repetition software takes advantage of this recall effect by timing things for you, and showing you flashcard-style questions at specific time intervals so that remembering becomes easy.
