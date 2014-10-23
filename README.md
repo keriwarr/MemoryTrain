@@ -6,7 +6,6 @@ Spaced-repetition-based memory training app for the [Pebble](https://getpebble.c
 See the [ChallengePost](http://challengepost.com/software/memorytime) for the Hack the North entry!
 
 ![question](http://s3.amazonaws.com/challengepost/photos/production/software_photos/000/161/905/datas/xlarge.png?1411309535)
-![answer](http://s3.amazonaws.com/challengepost/photos/production/software_photos/000/161/907/datas/xlarge.png?1411309537)
 
 We designed this Pebble app for ourselves - busy students on the go, who need to chisel time out of our day to study. What if it were easier to study concepts and have your brain remember them?
 
@@ -17,3 +16,6 @@ Wearable tech like the Pebble is always with you, and makes it easier to stay co
 Why not combine the two?
 
 By creating a spaced repetition app for the Pebble, we enhance the capabilities of memory training software by giving you access to it all day. Every time you check your watch, a concept is displayed to you in order to refresh it in your memory. In response, the wearer simply presses a yes/no button on the watch to tell the software whether or not they remembered the answer. The software does the rest.
+
+MemoryTrain is still a work in progress.
+We expect to have a working application available for download on the Pebble app store in the near future.
